@@ -1,9 +1,9 @@
 import { ReportService } from "./public/ReportService";
-import PDFReport from './public/PDFReport';
+import GISReport from './public/GISReport';
 
-const pdfReportGenerator = new PDFReport();
-const pdfReportService = new ReportService(pdfReportGenerator);
+const GISReportGenerator = new GISReport();
+const GISReportService = new ReportService(GISReportGenerator);
 
-const data = ["Noel", "2000", "Metro", "4000", "John", "6000"];
+const data = ["Noel", "Metro", "John"];
 
-pdfReportService.generateReport(data);
+GISReportService.generateReport(data);
